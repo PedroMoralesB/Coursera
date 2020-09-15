@@ -22,9 +22,9 @@ nav a:hover, nav a:focus {
 	text-decoration: none;
 }
 
-#nav-list a {
+/*#nav-list a {
 	text-align: center;
-}
+}*/
 
 #nav-list a:hover {
 	color: blue;
@@ -41,7 +41,7 @@ nav a:hover, nav a:focus {
 h1 {
 	font-size: 1.5em;
 	font-weight: bold;
-	margin: 20px auto;
+	margin: 20px auto 30px;
 }
 
 section div {
@@ -55,7 +55,7 @@ section div h2 {
 }
 
 section div p {
-	height: 1000px;
+	height: 2500px;
 	padding: 0px 20px;
 }
 
