@@ -1,1 +1,14 @@
-<div class="loader"></div>
+<div>
+    <div ng-repeat="item in menu.foundItems">
+        <div class="row border-dark">
+            <div class="col-md-8">
+                <h3>{{item.short_name}} - {{item.name}}</h3>
+                <p>{{item.description}}</p>
+            </div>
+            <div class="col-md-4">
+                <input type="button" ng-click="menu.onRemove({index: $index})" class="btn btn-lg btn-primary" value="Don't want this one!">
+            </div>
+        </div>
+    </div>
+    <div class="alert alert-danger" ng-show="menu.onEmpty">{{menu.onEmpty}}</div>
+</div>
