@@ -19,6 +19,11 @@
             </div>
         </div>
         <found-items class="row" found-items="menu.found" on-remove="menu.removeMenuItem(index)" on-empty="menu.message"></found-items>
+        <div ng-if="menu.dataNotFound">
+            <div class="alert alert-danger">
+                  <p>Sorry Nothing found.</p>
+            </div>
+         </div> 
     </div>
 </body>
 </html>
