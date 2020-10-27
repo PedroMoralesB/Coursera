@@ -1,0 +1,18 @@
+<table class="table table-bordered">
+	<thead>
+		<tr class="table-primary">
+			<th>Name</th>
+			<th>S.Name</th>
+			<th>Description</th>
+			<th>Price</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="categorieItem in $ctrl.items">
+			<td>{{categorieItem.name}}</td>
+			<td>{{categorieItem.short_name}}</td>
+			<td>{{categorieItem.description}}</td>
+			<td>{{categorieItem.price_large | currency}}</td>
+		</tr>
+	</tbody>
+</table>

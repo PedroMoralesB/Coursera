@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Restaurant Menu App</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-ui-router.min.js"></script>
+    <!-- Application Scripts -->
+    <script src="app-scripts/menuapp.module.js"></script>
+    <script src="app-scripts/data.module.js"></script>
+    <script src="app-scripts/menudata.service.js"></script>
+    <script src="app-scripts/categories.component.js"></script>
+    <script src="app-scripts/categories.controller.js"></script>
+    <script src="app-scripts/items.component.js"></script>
+    <script src="app-scripts/items.controller.js"></script>
+    <script src="app-scripts/routes.js"></script>
+    <base href="/">
+</head>
+<body ng-app="MenuApp">
+    <div class="container">
+        <div class="header clearfix">
+            <h3>Restaurant Menu App</h3>
+            <button type="button" class="btn btn-link" ui-sref="home"><a href="#">Home</a></button>     
+            <button type="button" class="btn btn-link" ui-sref="categories"><a href="#">Categories</a></button>     
+        </div>
+        <ui-view></ui-view>
+    </div>
+    <!-- Application Templates-->
+    <script src="app-templates/home.template.html"></script>
+    <script src="app-templates/categories.component.html"></script>
+    <script src="app-templates/categories.template.html"></script>
+    <script src="app-templates/items.component.html"></script>
+    <script src="app-templates/items.template.html"></script>
+</body>
+
+</html>
